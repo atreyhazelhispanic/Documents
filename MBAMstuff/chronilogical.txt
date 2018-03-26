@@ -1,0 +1,9 @@
+Run:
+JRT
+then restart
+then
+mbar
+adwcleaner
+chameleon (optional)
+mb3 (trial)
+mbclean to get of mbam history.
