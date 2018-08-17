@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+    <link rel="icon" href="../images/nordstromIcon.png" />
+
+    <!--Importing CDNs'-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/vuex@3.0.1/dist/vuex.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.17.6/swagger-ui-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource"></script>
+    <link rel="stylesheet" type="text/css" href="css/help.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<!--Bootstrap Navbar-->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" id="myNordstrom" v-bind:href="myNordstrom"><img src="../images/NordLogo-white.png" alt="NordLogo" width="250" height="50"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link selected" id="redriveLink" href="../"><router-view :to="{path: '/'}">Redrive</router-view><span class="sr-only">(current)</span></a>
+            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link" id="userGuideLink" href="userGuide/userGuide.html">User Guide<span class="sr-only">(current)</span></a>
+            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" id="Help" href="./help.html">Help<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav collapse navbar-collapse justify-content-end">
+            <li class="nav-item" id="loginNav">
+                <div id="loginLink">
+                    <router-view :to="{name: 'homepage'}"></router-view>
+                    <!--<router-link :to="{name: 'redirect'}" @click.native="getNAuth">
+                        <div v-if="loading"><router-view :to="{name: 'nAuth'}"></router-view></div>
+                        <button id="loginClick"><div v-else>{{ localStorage.getItem('name') }}</div></button>
+                    </router-link>  -->
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<p id="helpParagraph">For information how to use this application, documentation on what it contains or what it utilizes, as well as appendix please follow the link below.
+Thank you for using the Redrive Tool.</br></br>
+<a href="https://confluence.nordstrom.net/display/TDS/NPS+Redrive+Tool">Documentation on Confluence</a>
+</p>
+
+
+</body>
+</html>

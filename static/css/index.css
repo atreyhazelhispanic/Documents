@@ -1,0 +1,152 @@
+body {
+    background-color: #ffffff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*
+#nordLogo{
+    color: black;
+    width:25%;
+    height:auto;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 50%;
+    right: 0;
+}*/
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+}
+
+#skuBox{
+    white-space: nowrap;
+}
+
+a.selected {
+    color: black;
+    font-family:Georgia;
+    font-size:x-large;
+}
+
+.navbar-nav > li > a {
+    line-height: 60px;
+    height: 60px;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+nav a {
+    color: white;
+    font-size: large;
+    font-family: Georgia;
+}
+nav a:hover, #redrivePopup_open:hover {
+    color: grey;
+}
+.navbar {
+    background-color: rgba(88,88,88,0.5);
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url('../images/hamburgerMenu.svg');
+}
+.navbar .navbar-brand {
+    color: black;
+    font-size: 20px;
+}
+.collapse navbar-collapse justify-content-end {
+    list-style-type: none;
+}
+
+/*The popup window itself */
+#redriveDialog {
+    margin-left: 40%;
+    text-align: left;
+    padding-top: 20px;
+}
+
+/*Close button "x" to close popup */
+.closeButton {
+    font-size: medium;
+    float: right;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#redriveSubmit {
+    float: left;
+}
+
+#redriveForm {
+    left: 0px;
+    top: 0px;
+    width: 350px;
+    text-align: right;
+    margin-bottom: 30px;
+    display: none;
+}
+#redriveForm label {
+    float: left;
+    margin: 1px;
+}
+
+
+/*--Modal pop-up styling--*/
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+}
+.modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-container {
+    text-align: center;
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.modal-header {
+    margin-top: 0;
+    color: #42b983;
+    margin-left: 10%;
+    font-size: large;
+}
+.modal-footer{
+    margin-right: 33%;
+}
+.modal-body {
+    margin: 20px 0;
+}
+.modal-default-button {
+    float: right;
+}
+.modal-enter {
+    opacity: 0;
+}
+.modal-leave-active {
+    opacity: 0;
+}
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#show-modal{
+    display: none;
+}

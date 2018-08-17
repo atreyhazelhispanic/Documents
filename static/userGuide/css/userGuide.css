@@ -1,0 +1,53 @@
+body {
+    background-color: #ffffff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a.selected {
+    color: black;
+    font-family:fantasy;
+    font-size:x-large;
+}
+
+.navbar-nav > li > a {
+    line-height: 60px;
+    height: 60px;
+    padding-top:0;
+    padding-bottom:0;
+}
+nav a {
+    color: white;
+    font-size: large;
+    font-family: fantasy;
+}
+nav a:hover, #redrivePopup_open:hover {
+    color: grey;
+}
+.navbar {
+    background-color: rgba(88,88,88,0.5);
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+.navbar .navbar-brand {
+    color: black;
+    font-size: 20px;
+}
+
+#nordLogo{
+    color: black;
+    width:25%;
+    height:auto;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+}
