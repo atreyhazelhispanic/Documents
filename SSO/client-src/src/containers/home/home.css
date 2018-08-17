@@ -1,0 +1,56 @@
+.home-humility{
+  text-align: center;
+}
+
+.home-fa-twitter{
+  margin-left: 2em;
+}
+.landing {
+  margin-left: 90px;
+}
+ul.landing {
+  list-style-type: none;
+  font-size: 2vh;
+  max-width: 100%;
+
+}
+
+.landing li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.23);
+}
+.landing li span {
+  padding-right: 0.6em;
+}
+
+.landing a {
+  text-decoration: none;
+  color: black;
+}
+.landing a:hover {
+  text-decoration: none;
+  color: #c0c0c0
+}
+.landing p {
+  font-size: 12px;
+  color: black;
+}
+.landing .welcome {
+  margin-top: 0px;
+}
+.landing li span.adminLabel {
+  border: 2px solid #d9edf7;
+  color: #025aa5;
+  padding: 3px;
+  paddingLeft: 3px;
+  paddingRight: 3px;
+  margin-right: 10px;
+}
+.landing li span.vendorNumber {
+  color: rgba(0, 0, 0, 0.54);
+  padding-right: 0px;
+}
+
+.images img {
+  margin-right: 10px;
+}

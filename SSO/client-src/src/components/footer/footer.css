@@ -1,0 +1,31 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 3em;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 3em;
+  line-height: 3em;
+  background-color: #fafafa;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #000000;
+}
+
+footer a {
+  color: #000000;
+
+}
+footer a:active, a:hover {
+  text-decoration: underline;
+  color: #000000;
+}

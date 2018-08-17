@@ -1,0 +1,12 @@
+/* Hide the up/down number spinner on number input fields */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+{ 
+    /* Required by all */
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+    /* Firefox Only */
+input[type=number] {
+    -moz-appearance:textfield;
+}

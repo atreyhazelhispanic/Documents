@@ -1,0 +1,57 @@
+.brand {
+    width: 22%;
+    display:inline-block;
+
+  }
+.navbar {
+    background-color: #ffffff;
+}
+.headersmall {
+  color: #000000;
+  font-size: 0.85em;
+}
+.account {
+padding-top: 0.03em;
+padding-bottom: 1em;
+}
+a.headersmall, a.headersmall:hover {
+  margin-right: 1em;
+  color: #000000;
+  text-decoration: none;
+}
+
+div.rightnav {
+  width: 40vw;
+
+}
+appName {
+    font-size: 1.3125rem;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    flex: 1;
+}
+a.strikethrough {
+  text-decoration: line-through;
+}
+.brand {
+    padding-bottom: 10px;
+
+}
+.brand img {
+    height: 23px;
+
+}
+.navbar {
+    padding-bottom:20px;
+}
+username {
+    float: right;
+    font-size: 0.65em;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+username .fa {
+    margin-right: 5px;
+}

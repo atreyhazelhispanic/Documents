@@ -1,0 +1,120 @@
+.appContent {
+
+    margin:0;
+}
+body, h1, h2, h3, h4 {
+    color: #393939;
+}
+.frontImg { width: 100% }
+
+.contentpanel{
+    background-color: #fafafa;
+    justify-content: center;
+    margin-right:-15px;
+    border-left: 1px solid #cccccc;
+    margin-top: 6px;
+    flex: 1 1 auto;
+    display:flex;
+    padding-bottom: 200px;
+}
+
+.leftpanel {
+    width: 243px;
+    float: left;
+    height: 100%;
+    flex: 1 1 auto;
+    display:flex;
+}
+ul.links {
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+
+    color: rgba(0, 0, 0, 0.87);
+    padding-top: 1em;
+    cursor: pointer;
+}
+
+.leftnav li {
+    font-size: 1rem;
+    padding: 10px;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.leftnav li a {
+    color: rgba(0, 0, 0, 0.87);
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+.leftnav li a, .leftnav li a:active, .leftnav li a:visited {
+
+    text-decoration: none;
+}
+
+.leftnav ul li:hover {
+    background-color: #f7f7f7;
+    color: rgba(0, 0, 0, 0.90);
+
+}
+.leftnav .fa {
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+a.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: initial;
+}
+.navbar-brand img {
+    width: 190px;
+    height: 23.91px;
+}
+.apphead {
+    clear: both;
+    font-weight: 400;
+    font-family: BrandonText;
+    line-height: 1.16667em;
+    display: inline-block;
+    width: 100%;
+    height: 63px;
+}
+.lefthead {
+    width: 243px;
+    float:left;
+
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    height: 63px;
+    padding:20px;
+}
+.righthead {
+    background-color: #607d8b;
+    color: #ffffff;
+    margin-left: 243px;
+    padding: 24px;
+    height: 63px;
+    font-size: 1.3125rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.contentpanel .container {
+    padding-top: 20px;
+    min-height: 768px;
+  }
+.landing p {
+    font-size: 1rem;
+}
+.motd {
+    border: 1px solid #607d8b;
+    padding: 34px;
+    background-color: #ffffff;
+}
+.motd a {
+    color: #0275d8;
+}
+
+.motd a:hover, .motd a:active {
+    color: #0275d8;
+    text-decoration: underline;
+}
